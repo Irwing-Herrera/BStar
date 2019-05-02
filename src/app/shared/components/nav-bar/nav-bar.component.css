@@ -1,0 +1,23 @@
+.menu {
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo-page {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    width: 15vw;
+    height: 6vh;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo-page {
+        position: absolute;
+        left: 2rem;
+        top: 1rem;
+        width: 15vw;
+        height: 6vh;
+    }
+}

@@ -1,0 +1,326 @@
+<div class="enlaces">
+    <a href="https://pngtree.com/free-vectors">free vectors from pngtree.com</a>
+    <a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>
+</div>
+
+<div id="pageHome" class="container-page-home">
+
+    <div id="seccion_0" class="header-image">
+        <img src="assets/back.jpg" class="img-fluid" />
+
+        <!-- HEADER -->
+        <div class="centered">
+            <div class="row d-vertical h100">
+
+                <div class="col-sm-12 col-md-5">
+                    <div class="row">
+
+                        <div *ngIf="header == 0" class="padding-header">
+                            <div class="col-12 titulo-header ocultar-320px">
+                                <label class="position-absolute index">Manifiesto</label>
+                                <label class="subtitulo-header-primary position-relative">Manifiesto</label>
+                                <label class="subtitulo-header-secondary position-relative">Manifiesto</label>
+
+                            </div>
+                            <div class="col-12 text-header text-justify">Creamos experiencias digitales manteniendo a la persona como el centro del proceso de construcción.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-1"></div> -->
+                <div class="col-sm-12 col-md-5" [@fadeAnimation]="header">
+
+                    <div *ngIf="header == 0">
+                        <img src="assets/header.png" class="img-fluid w-100" />
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN HEADER -->
+    </div>
+
+    <div class="wave-section">
+
+        <!-- SERVICIOS -->
+        <div class="cards">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 d-vertical">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="servicios" class="card shadow p-1 rounded">
+                                <div class="row p-2">
+
+                                    <div class="col-12 text-center">
+                                        <label class="titulo-header-2">Nuestros Servicios</label>
+
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 border-color">
+                                        <div class="row p-1 h100">
+                                            <div class="col-12 d-vertical">
+                                                <img src="assets/ethernet.svg" class="img-fluid img-servicios" />
+                                            </div>
+                                            <div class="col-12 p-4">
+                                                <h6 class="text-center">Desarrollo de aplicaciones</h6>
+                                                <hr>
+                                                <div class="d-vertical">
+                                                    <button (click)="navegar('firstService')" type="button" class="btn btn-outline-dark rounded-pill btn-text">Más
+                                                        información</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-4 border-color">
+                                        <div class="row p-1 h100">
+                                            <div class="col-12 d-vertical">
+                                                <img src="assets/optical.svg" class="img-fluid img-servicios" />
+                                            </div>
+                                            <div class="col-12 p-4">
+                                                <h6 class="text-center">Modelos de negocio</h6>
+                                                <hr>
+                                                <div class="d-vertical">
+                                                    <button (click)="navegar('secondService')" type="button" class="btn btn-outline-dark rounded-pill btn-text">Más
+                                                        información</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="row p-1 h100">
+                                            <div class="col-md-12 d-vertical">
+                                                <img src="assets/cctv.svg" class="img-fluid img-servicios" />
+                                            </div>
+                                            <div class="col-md-12 p-4">
+                                                <h6 class="text-center">Consultoría</h6>
+                                                <hr>
+                                                <div class="d-vertical">
+                                                    <button (click)="navegar('thirdServicio')" type="button" class="btn btn-outline-dark rounded-pill btn-text">Más
+                                                        información</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN SERVICIOS -->
+
+        <svg viewBox="0 0 1000 120" aria-hidden="true">
+            <path
+                d="M1950,15.2101911 L1440,120 L0,120 L0,21.2101911 C100,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z">
+            </path>
+        </svg>
+
+    </div>
+
+    <!-- NOSOTROS -->
+    <div class="seccion">
+        <div id="nosotros" class="row">
+            <div class="col-1 ocultar-320px"></div>
+
+            <div class="col-sm-12 col-md-5 text-justify p-5 text-page">
+                <label class="titulo-header position-absolute index">Nosotros</label>
+                <label class="subtitulo-header position-relative">Nosotros</label>
+
+                <div class="hr-star"></div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <label class="text-center">Creemos en la innovación como pilar de la diferenciación.</label>
+                    </div>
+                    <div class="col-12 d-vertical">
+                        <img src="/assets/nosotros-icon.svg" class="img-fluid img-mobile" width="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <ul class="timeline">
+                    <li>
+                        <label class="first-timeline"></label>
+                        <a class="titulo-timeline">El Inicio</a>
+                        <p class="justify-content text-mobile">Interactuamos como colegas y encontramos afinidades y visión profesional de proyectos, iniciando como equipo Multidisciplinario.</p>
+                    </li>
+                    <li>
+                        <label class="second-timeline"></label>
+                        <a class="titulo-timeline">La Estructura</a>
+                        <p class="justify-content text-mobile">Desarrollamos productos y servicios con soluciones innovadoras para líderes de distintos sectores. Así nace BLACKSTAR Technology.</p>
+                    </li>
+                    <li>
+                        <label class="third-timeline"></label>
+                        <a class="titulo-timeline">La Consolidación</a>
+                        <p class="justify-content text-mobile">Se integra como empresa multidisciplinaria para la Innovación, emprendimiento y Transformación Digital.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- FIN NOSOTROS -->
+
+    <!-- VISION & MISION -->
+    <div id="vision&mision" class="line-Vertical">
+        <div class="line-Vertical-Container text-page">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="border-right h-100 p-3">
+                        <h4 class="titulo-header-2">Visión</h4>
+                        <hr class="hr-white">
+                        <p class="text-mobile">Nuestra pasión por la tecnología nos hace ir siempre a la vanguardia. Esto hace que enfoquemos el trabajo de una manera diferente, yendo un paso más allá de las necesidades de nuestros clientes.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mtop-3">
+                    <div class="border-right h-100 p-3">
+                        <h4 class="titulo-header-2">Misión</h4>
+                        <hr class="hr-white">
+                        <p class="text-mobile">Construir productos y servicios en un ambiente de calidad total, ayudar y guiar a las empresas en su proceso de transformación digital, utilizando las tecnologías y las metodologías más innovadoras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN VISION & MISION -->
+
+
+    <!-- FIRST SERVICE -->
+    <div id="firstService" class="seccion-second">
+        <div class="box-seccion" data-rellax-speed="10" data-rellax-percentage="0.5" style="z-index: -100;"></div>
+        <div class="container-fluid seccion-1">
+            <div class="row">
+                <div class="col-sm-12 col-md-5 d-vertical order-image">
+                    <img src="assets/desarrollo.png" class="seccion-image-desarrollo" />
+                </div>
+                <div class="col-1 ocultar-320px"></div>
+                <div class="col-sm-12 col-md-6 text-justify p-5 text-page">
+                    <label class="titulo-header position-absolute">Desarrollo de software.</label>
+                    <label class="subtitulo-header position-relative">Desarrollo de software.</label>
+                    <div class="hr-star"></div>
+                    <label class="text-mobile">
+                        Aplicaciones Móvil/Web que promueven la singularidad de tu negocio a través de funcionalidades y
+                        características especificas, perfectamente diseñadas.</label>
+                    <button type="button" class="btn btn-outline-success rounded-pill btn-text">Contratar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN FIRST SERVICE -->
+
+    <!-- SECOND SERVICE -->
+    <div id="secondService" class="seccion-second">
+        <div class="box-seccion-third-1" data-rellax-speed="10" data-rellax-percentage="0.5" style="z-index: -100;">
+        </div>
+        <div class="box-seccion-third-2" data-rellax-speed="10" data-rellax-percentage="0.5" style="z-index: -100;">
+        </div>
+
+        <div class="container-fluid seccion-3 text-page">
+            <div class="row">
+                <div class="col-1 ocultar-320px"></div>
+
+                <div class="col-sm-12 col-md-6 text-justify p-5">
+                    <label class="titulo-header position-absolute">Modelos de negocio.</label>
+                    <label class="subtitulo-header position-relative">Modelos de negocio.</label>
+                    <div class="hr-star"></div>
+
+                    <label class="text-mobile">Desarrollamos proyectos innovadores que definan el futuro de tu organización.</label>
+                    <button type="button" class="btn btn-outline-success rounded-pill btn-text">Contratar</button>
+                </div>
+
+                <div class="col-sm-12 col-md-4 d-vertical order-image">
+                    <img src="assets/modelo.png" class="seccion-image-modelo" />
+                </div>
+                <div class="col-1 ocultar-320px"></div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN SECOND SERVICE -->
+
+    <!-- THIRD SERVICE -->
+    <div id="thirdServicio" class="seccion-second section-margen-menos">
+        <div class="box-fourth" style="z-index: -100;"></div>
+        <div class="container-fluid seccion-4 text-page">
+            <div class="row">
+                <div class="col-1 ocultar-320px"></div>
+
+                <div class="col-sm-12 col-md-4 d-vertical order-image">
+                    <img src="assets/consultoria.png" class="seccion-image-consultoria" />
+                </div>
+                <div id="fourthServicio" class="col-sm-12 col-md-5 text-justify p-5">
+                    <label class="titulo-header position-absolute">Consultoría</label>
+                    <label class="subtitulo-header position-relative">Consultoría</label>
+                    <div class="hr-star"></div>
+
+                    <label class="text-mobile">A través de investigaciones renovamos tu propuesta de valor, tu estrategia comercial y tu
+                        estrategia de operación.</label>
+
+                    <button type="button" class="btn btn-outline-success rounded-pill btn-text">Contratar</button>
+                </div>
+
+                <div class="col-3 ocultar-320px"></div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN THIRD SERVICE -->
+
+
+    <div class="wave-section-2">
+
+        <svg viewBox="0 0 1000 120" aria-hidden="true">
+            <path
+                d="M1950,15.2101911 L1440,120 L0,120 L0,21.2101911 C100,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z">
+            </path>
+        </svg>
+
+        <div id="seccion_3" class="contactos p-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 ocultar-320px">
+                        <div class="img-card shadow-lg rounded float-right">
+                            <img src="assets/woman.jpg" class="img-card-size rounded" />
+                        </div>
+                    </div>
+                    <div class="col-4 ocultar-320px">
+                        <div class="row p-1">
+                            <div class="col-12 p-3">
+                                <label class="nombre-card">Freddie Mercury</label>
+
+                                <hr class="hr-white">
+
+                                <label class="text-muted">Fundador</label>
+                                <label class="texto-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                                    ut suscipit corrupti? Eius eos, neque incidunt officiis corporis assumenda
+                                    praesentium!</label>
+                                <div class="container pt-2">
+                                    <div class="row">
+                                        <div class="col-3 d-vertical">
+                                            <img src="assets/facebook.svg" class="icon-red-card" />
+                                        </div>
+                                        <div class="col-3 d-vertical">
+                                            <img src="assets/youtube.svg" class="icon-red-card" />
+                                        </div>
+                                        <div class="col-3 d-vertical">
+                                            <img src="assets/twitter.svg" class="icon-red-card" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <label class="nombre-card titulo-header">Queremos saber mas de ti</label>
+                        <app-formulario></app-formulario>
+                    </div>
+
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
